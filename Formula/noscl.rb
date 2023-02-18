@@ -1,6 +1,6 @@
 class Noscl < Formula
   desc "Command-line client for Nostr written in Go"
-  homepage "https://nostr.com/"
+  homepage "https://github.com/fiatjaf/noscl"
   url "https://github.com/fiatjaf/noscl.git",
       tag:      "v0.6.0",
       revision: "b4a7e31e09967548d99d477bc6079c43d895e91c"
