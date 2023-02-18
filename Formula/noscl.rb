@@ -7,7 +7,7 @@ class Noscl < Formula
   license :public_domain
   head "https://github.com/fiatjaf/noscl.git", branch: "master"
 
-  depends_on "go" => :build
+  depends_on "homebrew/core/go" => :build
 
   def install
     ENV["CGO_ENABLED"] = "0"

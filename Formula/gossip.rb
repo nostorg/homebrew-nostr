@@ -7,7 +7,7 @@ class Gossip < Formula
   license "MIT"
   head "https://github.com/mikedilger/gossip.git", branch: "master"
 
-  depends_on "rust" => :build
+  depends_on "homebrew/core/rust" => :build
 
   def install
     system "cargo", "install", *std_cargo_args
