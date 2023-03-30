@@ -1,4 +1,6 @@
-# 0xbabo Nostr
+# Homebrew Tap for Nostr
+
+This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.com/) software.
 
 ## How do I install these formulae?
 
