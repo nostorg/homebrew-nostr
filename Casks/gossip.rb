@@ -7,7 +7,7 @@ cask "gossip" do
 
   url "https://github.com/mikedilger/gossip/releases/download/v#{version}/gossip-#{version}-Darwin-#{arch}.dmg"
   name "Gossip"
-  desc "Gossip is a nostr client"
+  desc "Desktop client for Nostr written in Rust"
   homepage "https://github.com/mikedilger/gossip/"
 
   livecheck do
