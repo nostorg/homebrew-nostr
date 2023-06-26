@@ -8,9 +8,9 @@ This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.co
 
 Or `brew tap 0xbabo/nostr` and then `brew install <formula>`.
 
-In particular, to install the gossip cask:
+To install a cask with the same name as a formula (such as `gossip`):
 
-`brew install --no-quarantine --cask 0xbabo/nostr/gossip`
+`brew install --cask 0xbabo/nostr/<cask>`
 
 ## Documentation
 
