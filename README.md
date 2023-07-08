@@ -4,9 +4,9 @@ This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.co
 
 ## How do I install these formulae?
 
-`brew install 0xbabo/nostr/<formula>`
+`brew install babonyx/nostr/<formula>`
 
-Or `brew tap 0xbabo/nostr` and then `brew install <formula>`.
+Or `brew tap babonyx/nostr` and then `brew install <formula>`.
 
 ## Documentation
 
