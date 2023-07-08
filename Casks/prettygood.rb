@@ -7,7 +7,7 @@ cask "prettygood" do
 
   url "https://github.com/wds4/pretty-good/releases/download/v0.1.2-alpha/PrettyGood-#{version}#{arch}.dmg"
   name "PrettyGood"
-  desc "nostr desktop client, motivated by the desire to build a decentralized web of trust"
+  desc "Nostr client motivated by the desire to build a decentralized web of trust"
   homepage "https://github.com/wds4/pretty-good"
 
   livecheck do

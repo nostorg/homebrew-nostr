@@ -4,7 +4,7 @@ cask "nostur" do
 
   url "https://nostur.com/Nostur-#{version}.dmg"
   name "Nostur"
-  desc "A nostr client for iPhone and macOS"
+  desc "Nostr client"
   homepage "https://nostur.com/"
 
   livecheck do

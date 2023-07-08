@@ -3,7 +3,7 @@ cask "iris-to" do
   sha256 "0c3321df7420a6abea2e091b824a391e3fd7c81c121ed79b73b73677c87ecb46"
 
   url "https://github.com/irislib/iris-messenger/releases/download/app-v#{version}/iris_#{version}_x64.dmg",
-    verified: "https://github.com/irislib/iris-messenger/"
+      verified: "github.com/irislib/iris-messenger/"
   name "Iris"
   desc "Decentralized messenger"
   homepage "https://iris.to/"
