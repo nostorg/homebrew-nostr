@@ -8,7 +8,7 @@ cask "gossip" do
   url "https://github.com/mikedilger/gossip/releases/download/v#{version}/gossip-#{version}-Darwin-#{arch}.dmg"
   name "Gossip"
   desc "Desktop client for Nostr written in Rust"
-  homepage "https://github.com/mikedilger/gossip/"
+  homepage "https://github.com/mikedilger/gossip"
 
   livecheck do
     url :url
@@ -34,6 +34,6 @@ cask "gossip" do
     to run it may be necessary to override the macOS security policy. This can be
     done with homebrew using the `--no-quarantine` option:
 
-    brew reinstall --cask --no-quarantine #{token}
+      brew reinstall --cask --no-quarantine #{token}
   EOS
 end
