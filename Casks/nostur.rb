@@ -1,6 +1,6 @@
 cask "nostur" do
-  version "1.2.0"
-  sha256 "13e585dbde3f76aeb58b3a8fa97a1e7917bfd3b9e0cca265210dae0bc3deee9b"
+  version "1.3.0"
+  sha256 "06049ddb079b9b2eb2f8280617cf71d9edf28597c90ef8495286c7659836fda7"
 
   url "https://nostur.com/Nostur-#{version}.dmg"
   name "Nostur"
