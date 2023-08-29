@@ -1,16 +1,32 @@
 # Homebrew Tap for Nostr
 
-This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.com/) software.
+This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.com/) software, such as [gossip](https://github.com/mikedilger/gossip).
 
 ## How do I install these formulae?
 
-`brew install babonyx/nostr/<formula>`
+```
+brew tap babonyx/nostr
+```
 
-Or `brew tap babonyx/nostr` and then `brew install <formula>`.
+and then `brew install <formula>`. Otherwise without adding the tap locally:
 
-To install a cask with the same name as a formula (such as `gossip`):
+```
+brew install babonyx/nostr/<formula>
+```
 
-`brew install --cask babonyx/nostr/<cask>`
+### How do I install `gossip`?
+
+To install the latest development branch:
+
+```
+brew install --HEAD gossip
+```
+
+To install the cask (DMG/Application release build):
+
+```
+brew install --cask gossip
+```
 
 ## Documentation
 
