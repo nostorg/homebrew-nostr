@@ -7,7 +7,7 @@ class NostrCommanderRs < Formula
   license "GPL-3.0"
   head "https://github.com/8go/nostr-commander-rs.git", branch: "master"
 
-  depends_on "homebrew/core/rust" => :build
+  depends_on "rust" => :build
 
   def install
     system "cargo", "install", *std_cargo_args

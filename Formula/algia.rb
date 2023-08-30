@@ -7,7 +7,7 @@ class Algia < Formula
   license "MIT"
   head "https://github.com/mattn/algia.git", branch: "master"
 
-  depends_on "homebrew/core/go" => :build
+  depends_on "go" => :build
 
   def install
     ENV["CGO_ENABLED"] = "0"

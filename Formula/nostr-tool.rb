@@ -7,7 +7,7 @@ class NostrTool < Formula
   license "MIT"
   head "https://github.com/0xtrr/nostr-tool.git", branch: "master"
 
-  depends_on "homebrew/core/rust" => :build
+  depends_on "rust" => :build
 
   def install
     system "cargo", "install", *std_cargo_args

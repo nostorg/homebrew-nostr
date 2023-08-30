@@ -7,7 +7,7 @@ class NostrConsole < Formula
   license "AGPL-3.0-only"
   head "https://github.com/vishalxl/nostr_console.git", branch: "main"
 
-  depends_on "homebrew/core/dart-sdk" => :build
+  depends_on "dart-sdk" => :build
 
   def install
     system "dart", "pub", "get"
