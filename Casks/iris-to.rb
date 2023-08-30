@@ -1,6 +1,6 @@
 cask "iris-to" do
-  version "0.2.1"
-  sha256 "8ba6841c609c52e4fcf8c0de3bb420bff1d4fa1b86e01e0a15d75da828d90e52"
+  version "0.2.2"
+  sha256 "724280f9e1177a9ca7ef6b3e69a6371607ff21238500fbc38f438a28e60216a0"
 
   url "https://github.com/irislib/iris-messenger/releases/download/app-v#{version}/iris_#{version}_x64.dmg",
       verified: "github.com/irislib/iris-messenger/"
