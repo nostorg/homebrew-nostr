@@ -5,13 +5,13 @@ This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.co
 ## How do I install these formulae?
 
 ```
-brew tap babonyx/nostr
+brew tap nostorg/nostr
 ```
 
 and then `brew install <formula>`. Otherwise without adding the tap locally:
 
 ```
-brew install babonyx/nostr/<formula>
+brew install nostorg/nostr/<formula>
 ```
 
 ### How do I install `gossip`?
