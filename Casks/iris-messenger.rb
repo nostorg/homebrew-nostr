@@ -1,4 +1,4 @@
-cask "iris-to" do
+cask "iris-messenger" do
   version "0.2.2"
   sha256 "724280f9e1177a9ca7ef6b3e69a6371607ff21238500fbc38f438a28e60216a0"
 
