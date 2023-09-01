@@ -12,7 +12,15 @@ cask "prettygood" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    regex(/v?(\d+(?:\.\d+)+(?:-\w+))/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
   end
 
   app "PrettyGood.app"
