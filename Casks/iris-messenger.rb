@@ -13,7 +13,8 @@ cask "iris-messenger" do
     strategy :github_latest
   end
 
-  app "iris.app"
+  # Rename to avoid conflict with homebrew/cask/iris
+  app "iris.app", target: "Iris Messenger.app"
 
   preflight do
     system_command "xattr",
