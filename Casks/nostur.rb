@@ -10,7 +10,7 @@ cask "nostur" do
   livecheck do
     url :homepage
     strategy :page_match
-    regex(%r{href=.*?/Nostur-(\d+(?:\.\d+)*)\.dmg}i)
+    regex(%r{href=.*?/Nostur[._-](\d+(?:\.\d+)*)\.dmg}i)
   end
 
   app "Nostur.app"
