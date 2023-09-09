@@ -7,6 +7,19 @@ class NostrConsole < Formula
   license "AGPL-3.0-only"
   head "https://github.com/vishalxl/nostr_console.git", branch: "main"
 
+  livecheck do
+    url :url
+    regex(/v?(\d+(?:\.\d+)+(?:-\w+))/i)
+    strategy :github_releases do |json, regex|
+      json.map do |release|
+        match = release["tag_name"]&.match(regex)
+        next if match.blank?
+
+        match[1]
+      end
+    end
+  end
+
   depends_on "dart-sdk" => :build
 
   def install
