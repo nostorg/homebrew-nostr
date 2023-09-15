@@ -15,7 +15,7 @@ class Gossip < Formula
   depends_on "ffmpeg" => :recommended
 
   def install
-    build_args = ["build", "--release"]
+    build_args = []
     features = []
     features.push("lang-cjk") if build.with? "cjk"
     features.push("video-ffmpeg") if build.with? "ffmpeg"
@@ -23,7 +23,7 @@ class Gossip < Formula
     build_args.push("--no-default-features") if build.without? "rustls"
     build_args.push("--features=#{features.join(",")}") unless features.empty?
 
-    system "cargo", *build_args
+    system "cargo", "install", *std_cargo_args, *build_args
     cd "target/release" do
       bin.install "gossip"
       if build.with? "ffmpeg"
