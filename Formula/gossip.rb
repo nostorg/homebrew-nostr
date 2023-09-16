@@ -33,4 +33,8 @@ class Gossip < Formula
       end
     end
   end
+
+  test do
+    system "#{bin}/gossip", "help"
+  end
 end
