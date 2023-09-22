@@ -23,6 +23,9 @@ class Gossip < Formula
     build_args.push("--no-default-features") if build.without? "rustls"
     build_args.push("--features=#{features.join(",")}") unless features.empty?
 
+    # required for successful build on intel or linux
+    ENV["RUSTFLAGS"] = "--cfg tokio_unstable"
+
     system "cargo", "install", *std_cargo_args, *build_args
     cd "target/release" do
       bin.install "gossip"
