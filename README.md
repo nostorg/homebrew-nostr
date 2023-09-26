@@ -25,10 +25,8 @@ brew install --HEAD gossip
 To install the cask (DMG/Application release build):
 
 ```
-brew install --cask --no-quarantine gossip
+brew install --cask gossip
 ```
-
-The `--no-quarantine` option is required to work around security restrictions [as documented upstream](https://github.com/mikedilger/gossip/blob/master/packaging/macos/README.macos.txt).
 
 ## Documentation
 
