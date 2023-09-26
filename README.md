@@ -4,14 +4,16 @@ This is a [homebrew tap](https://docs.brew.sh/Taps) for [nostr](https://nostr.co
 
 ## How do I install these formulae?
 
+First install [homebrew](https://brew.sh/). Then add the tap:
+
 ```
 brew tap nostorg/nostr
 ```
 
-and then `brew install <formula>`. Otherwise without adding the tap locally:
+Finally install a `<formula>` or `<cask>` (such as `gossip` or `lume`):
 
 ```
-brew install nostorg/nostr/<formula>
+brew install <formula>
 ```
 
 ### How do I install `gossip`?
