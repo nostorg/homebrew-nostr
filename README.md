@@ -16,6 +16,12 @@ brew install nostorg/nostr/<formula>
 
 ### How do I install `gossip`?
 
+To install the latest stable version:
+
+```
+brew install gossip
+```
+
 To install the latest development branch:
 
 ```
