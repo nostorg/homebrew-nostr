@@ -26,6 +26,10 @@ class Gossip < Formula
     # required for successful build on intel or linux
     ENV["RUSTFLAGS"] = "--cfg tokio_unstable"
 
+    # for building against sdl2 from homebrew
+    ENV.prepend "CPPFLAGS", "-I#{HOMEBREW_PREFIX}/include"
+    ENV.prepend "LDFLAGS", "-L#{HOMEBREW_PREFIX}/lib -Wl,-rpath,#{HOMEBREW_PREFIX}/lib"
+
     system "cargo", "install", *std_cargo_args, *build_args
     cd "target/release" do
       bin.install "gossip"
@@ -38,9 +42,9 @@ class Gossip < Formula
   end
 
   test do
-    mkdir_p testpath/"Library/Application Support" # macos
-    mkdir_p testpath/".config" # linux
-    input = <<~JSON
+    mkdir_p testpath/"Library/Application Support" # for macos
+    mkdir_p testpath/".local/share" # for linux
+    json = <<~JSON
       {
         "id": "b9fead6eef87d8400cbc1a5621600b360438affb9760a6a043cc0bddea21dab6",
         "kind": 1,
@@ -51,6 +55,6 @@ class Gossip < Formula
         "sig": "76d19889a803236165a290fa8f3cf5365af8977ee1e002afcfd37063d1355fc755d0293d27ba0ec1c2468acfaf95b7e950e57df275bb32d7a4a3136f8862d2b7"
       }
     JSON
-    assert_match "Valid event", shell_output("#{bin}/gossip verify_json '#{input}'")
+    assert_match "Valid event", shell_output("#{bin}/gossip verify_json '#{json}'")
   end
 end
