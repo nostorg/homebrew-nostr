@@ -12,11 +12,15 @@ class Gossip < Formula
 
   depends_on "cmake" => :build
   depends_on "rust" => :build
-  depends_on "ffmpeg" => :recommended
+
+  on_macos do
+    depends_on "ffmpeg" => :recommended
+  end
 
   on_linux do
     depends_on "libxkbcommon"
     depends_on "mesa"
+    depends_on "ffmpeg" => :optional
   end
 
   def install
