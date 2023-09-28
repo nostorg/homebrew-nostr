@@ -14,6 +14,11 @@ class Gossip < Formula
   depends_on "rust" => :build
   depends_on "ffmpeg" => :recommended
 
+  on_linux do
+    depends_on "libxkbcommon"
+    depends_on "mesa"
+  end
+
   def install
     build_args = []
     features = []
