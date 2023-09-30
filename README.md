@@ -34,6 +34,8 @@ To install the cask (DMG/Application release build):
 
 ```
 brew install --cask gossip
+OR
+brew install --cask --no-quarantine nostorg/homebrew-nostr/gossip
 ```
 
 ## Documentation
