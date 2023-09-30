@@ -35,10 +35,6 @@ class Gossip < Formula
     # required for successful build on intel or linux
     ENV["RUSTFLAGS"] = "--cfg tokio_unstable"
 
-    # for building against sdl2 from homebrew
-    ENV.prepend "CPPFLAGS", "-I#{HOMEBREW_PREFIX}/include"
-    ENV.prepend "LDFLAGS", "-L#{HOMEBREW_PREFIX}/lib -Wl,-rpath,#{HOMEBREW_PREFIX}/lib"
-
     system "cargo", "install", *std_cargo_args, *build_args
     cd "target/release" do
       bin.install "gossip"
