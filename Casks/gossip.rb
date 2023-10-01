@@ -26,14 +26,4 @@ cask "gossip" do
     "~/Library/Application Support/gossip",
     "~/Library/Saved Application State/com.mikedilger.gossip.savedState",
   ]
-
-  caveats <<~EOS
-    https://github.com/mikedilger/gossip/blob/master/packaging/macos/README.macos.txt
-
-    This app is not signed with an Apple Developer certificate. Therefore in order
-    to run it may be necessary to override the macOS security policy. This can be
-    done with homebrew using the `--no-quarantine` option:
-
-      brew reinstall --cask --no-quarantine #{token}
-  EOS
 end

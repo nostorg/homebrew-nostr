@@ -28,12 +28,5 @@ cask "iris-messenger" do
 
   caveats do
     requires_rosetta
-    <<~EOS
-      This app is not signed with an Apple Developer certificate. Therefore in order
-      to run it may be necessary to override the macOS security policy. This can be
-      done with homebrew using the `--no-quarantine` option:
-
-        brew reinstall --cask --no-quarantine #{token}
-    EOS
   end
 end
