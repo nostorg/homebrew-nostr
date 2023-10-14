@@ -12,8 +12,7 @@ class Noscl < Formula
   def install
     ENV["CGO_ENABLED"] = "0"
     system "go", "mod", "tidy"
-    system "go", "build"
-    bin.install "noscl"
+    system "go", "build", *std_go_args
   end
 
   test do
