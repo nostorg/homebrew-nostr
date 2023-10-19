@@ -1,11 +1,11 @@
 cask "prettygood" do
   arch arm: "-arm64"
 
-  version "0.1.2-alpha"
-  sha256 arm:   "9d6616f4056dc74862751d160464d4826388e3da7bc56b044e2810b695da33a6",
-         intel: "a810932b3df9dddd832604502e472ee2f0d0c68491d9fe777f268c7edfecb705"
+  version "0.2.0-alpha"
+  sha256 arm:   "1e30cb60fc1820274035e5a5f3dec806126d0491a35536bd981b146d43d96e7f",
+         intel: "9ec71ea0986c506eb7af48d8d6b7c6a9c370302dad5d1b1e388c8696b92140e5"
 
-  url "https://github.com/wds4/pretty-good/releases/download/v0.1.2-alpha/PrettyGood-#{version}#{arch}.dmg"
+  url "https://github.com/wds4/pretty-good/releases/download/v#{version}/PrettyGood-#{version}#{arch}.dmg"
   name "PrettyGood"
   desc "Nostr client motivated by the desire to build a decentralized web of trust"
   homepage "https://github.com/wds4/pretty-good"
