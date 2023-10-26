@@ -1,9 +1,9 @@
 cask "prettygood" do
   arch arm: "-arm64"
 
-  version "0.2.0-alpha"
-  sha256 arm:   "1e30cb60fc1820274035e5a5f3dec806126d0491a35536bd981b146d43d96e7f",
-         intel: "9ec71ea0986c506eb7af48d8d6b7c6a9c370302dad5d1b1e388c8696b92140e5"
+  version "0.2.1-alpha"
+  sha256 arm:   "4a11737ddb6b916450cd04a023eb42211073d0f17bd004614fbffbbb0d9e0876",
+         intel: "d561d95df7b12109a5f435eecca87a1777c767442fc556d0b9941d25ca2fc17f"
 
   url "https://github.com/wds4/pretty-good/releases/download/v#{version}/PrettyGood-#{version}#{arch}.dmg"
   name "PrettyGood"
