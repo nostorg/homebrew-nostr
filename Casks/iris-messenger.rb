@@ -10,7 +10,8 @@ cask "iris-messenger" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    strategy :git
+    regex(/^app[._-]v?(\d+(?:\.\d+)+)$/i)
   end
 
   # Rename to avoid conflict with homebrew/cask/iris

@@ -10,7 +10,7 @@ cask "lume" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    strategy :git
   end
 
   app "Lume.app"

@@ -12,7 +12,7 @@ cask "gossip" do
 
   livecheck do
     url :url
-    strategy :github_latest
+    strategy :git
   end
 
   app "Gossip.app"
