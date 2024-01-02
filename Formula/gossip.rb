@@ -2,8 +2,8 @@ class Gossip < Formula
   desc "Desktop client for Nostr written in Rust"
   homepage "https://github.com/mikedilger/gossip"
   url "https://github.com/mikedilger/gossip.git",
-      tag:      "v0.8.2",
-      revision: "32eecc4c465660be149148f8940ae4ec4a5f94da"
+      tag:      "v0.9.0",
+      revision: "f1442ae2311bcf72fb8d4e716bb6ca471a78b7b2"
   license "MIT"
   head "https://github.com/mikedilger/gossip.git", branch: "master"
 
@@ -35,7 +35,7 @@ class Gossip < Formula
     # required for successful build on intel or linux
     ENV["RUSTFLAGS"] = "--cfg tokio_unstable"
 
-    system "cargo", "install", *std_cargo_args, *build_args
+    system "cargo", "install", *std_cargo_args(path: "gossip-bin"), *build_args
     cd "target/release" do
       bin.install "gossip"
       if build.with? "ffmpeg"
