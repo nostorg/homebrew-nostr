@@ -1,6 +1,6 @@
 cask "lume" do
-  version "2.2.3"
-  sha256 "bd48e3f7d337e4392e0bc0776feb936b4312906f9964add187b20f87cf7159f7"
+  version "3.0.0"
+  sha256 "1ac63c3cc775dcfa7ae90eefc888a80d160842c7cf88e909b2510b7bc2e0d81e"
 
   url "https://github.com/luminous-devs/lume/releases/download/v#{version}/Lume_#{version}_universal.dmg",
       verified: "github.com/luminous-devs/lume/"
@@ -16,10 +16,9 @@ cask "lume" do
   app "Lume.app"
 
   zap trash: [
-    "~/Library/Application Support/com.lume.nu",
-    "~/Library/Caches/com.lume.nu",
-    "~/Library/Preferences/com.lume.nu.plist",
-    "~/Library/Saved Application State/com.lume.nu.savedState",
-    "~/Library/WebKit/com.lume.nu",
+    "~/Library/Application Support/nu.lume.Lume",
+    "~/Library/Caches/nu.lume.Lume",
+    "~/Library/Saved Application State/nu.lume.Lume.savedState",
+    "~/Library/WebKit/nu.lume.Lume",
   ]
 end
