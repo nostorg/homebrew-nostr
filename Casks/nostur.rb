@@ -15,7 +15,5 @@ cask "nostur" do
 
   app "Nostur.app"
 
-  zap trash: [
-    "~/Library/Containers/nostur.com.Nostur",
-  ]
+  zap trash: "~/Library/Containers/nostur.com.Nostur"
 end
