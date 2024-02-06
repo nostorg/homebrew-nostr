@@ -1,6 +1,6 @@
 cask "lume" do
-  version "3.0.0"
-  sha256 "1ac63c3cc775dcfa7ae90eefc888a80d160842c7cf88e909b2510b7bc2e0d81e"
+  version "3.0.1"
+  sha256 "6c4eda1e2a40bba35ee8b391c9df32d496c581bec9a63932309a163705160af0"
 
   url "https://github.com/luminous-devs/lume/releases/download/v#{version}/Lume_#{version}_universal.dmg",
       verified: "github.com/luminous-devs/lume/"
