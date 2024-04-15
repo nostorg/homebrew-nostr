@@ -14,20 +14,20 @@ class Gossip < Formula
   depends_on "rust" => :build
 
   on_macos do
-    depends_on "ffmpeg" => :recommended
+    depends_on "ffmpeg@6" => :recommended
   end
 
   on_linux do
     depends_on "libxkbcommon"
     depends_on "mesa"
-    depends_on "ffmpeg" => :optional
+    depends_on "ffmpeg@6" => :optional
   end
 
   def install
     build_args = []
     features = []
     features.push("lang-cjk") if build.with? "cjk"
-    features.push("video-ffmpeg") if build.with? "ffmpeg"
+    features.push("video-ffmpeg") if build.with? "ffmpeg@6"
     features.push("native-tls") if build.without? "rustls"
     build_args.push("--no-default-features") if build.without? "rustls"
     build_args.push("--features=#{features.join(",")}") unless features.empty?
@@ -38,7 +38,7 @@ class Gossip < Formula
     system "cargo", "install", *std_cargo_args(path: "gossip-bin"), *build_args
     cd "target/release" do
       bin.install "gossip"
-      if build.with? "ffmpeg"
+      if build.with? "ffmpeg@6"
         libexec.install Dir[shared_library("libSDL2*")]
         bin.install_symlink Dir["#{libexec}/*"]
       end
