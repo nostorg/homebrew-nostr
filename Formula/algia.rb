@@ -2,8 +2,8 @@ class Algia < Formula
   desc "Nostr CLI client written in Go"
   homepage "https://github.com/mattn/algia"
   url "https://github.com/mattn/algia.git",
-      tag:      "v0.0.69",
-      revision: "538ae3a656f5c01e10be673c5658d6765be4e10e"
+      tag:      "v0.0.74",
+      revision: "166643fb887e92322abcd666fe7d163d454e5d93"
   license "MIT"
   head "https://github.com/mattn/algia.git", branch: "master"
 
