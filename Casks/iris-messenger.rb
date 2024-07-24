@@ -17,11 +17,6 @@ cask "iris-messenger" do
   # Rename to avoid conflict with homebrew/cask/iris
   app "iris.app", target: "Iris Messenger.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{staged_path}/iris.app"]
-  end
-
   zap trash: [
     "~/Library/Caches/to.iris",
     "~/Library/Saved Application State/to.iris.savedState",

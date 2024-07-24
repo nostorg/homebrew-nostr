@@ -17,11 +17,6 @@ cask "gossip" do
 
   app "Gossip.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{staged_path}/Gossip.app"]
-  end
-
   zap trash: [
     "~/Library/Application Support/gossip",
     "~/Library/Saved Application State/com.mikedilger.gossip.savedState",

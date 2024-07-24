@@ -17,11 +17,6 @@ cask "prettygood" do
 
   app "PrettyGood.app"
 
-  preflight do
-    system_command "xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{staged_path}/PrettyGood.app"]
-  end
-
   zap trash: [
     "~/Library/Preferences/org.erb.PrettyGood.plist",
     "~/Library/Saved Application State/org.erb.PrettyGood.savedState",
