@@ -1,11 +1,11 @@
 cask "gossip" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.11.0"
-  sha256 arm:   "3fd96033c78f6edf272487a8bf694fc10d24004ce9c8c5ef105ad2827f511a48",
-         intel: "b9db8c5dd5758b5170e3d888eb36373df5379acd1988e20b479b2f9fa3a132cc"
+  version "0.11.1"
+  sha256 arm:   "0ac0c6151a994e0e29af437f0462d5dbd17e4a1a192b7e16985bf84283e300b7",
+         intel: "8f99675f2f2d5c420279e5fd10ae3fad6fb565af93cc11304fad770c7b13981a"
 
-  url "https://github.com/mikedilger/gossip/releases/download/v#{version.major_minor}/gossip-#{version}-Darwin-#{arch}.dmg"
+  url "https://github.com/mikedilger/gossip/releases/download/v#{version}/gossip-#{version}-Darwin-#{arch}.dmg"
   name "Gossip"
   desc "Desktop client for Nostr written in Rust"
   homepage "https://github.com/mikedilger/gossip"

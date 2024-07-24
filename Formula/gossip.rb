@@ -2,8 +2,8 @@ class Gossip < Formula
   desc "Desktop client for Nostr written in Rust"
   homepage "https://github.com/mikedilger/gossip"
   url "https://github.com/mikedilger/gossip.git",
-      tag:      "v0.11",
-      revision: "5b0fb2ae5f1134793c5c3318aefda880738a07ac"
+      tag:      "v0.11.1",
+      revision: "e8e1f1e84d11075f42c09f89d4d6451cda52f76f"
   license "MIT"
   head "https://github.com/mikedilger/gossip.git", branch: "master"
 
@@ -13,7 +13,7 @@ class Gossip < Formula
   depends_on "cmake" => :build
   depends_on "rust" => :build
 
-  depends_on "ffmpeg@6" => :optional
+  depends_on "ffmpeg" => :optional
 
   on_linux do
     depends_on "libxkbcommon"
@@ -24,7 +24,7 @@ class Gossip < Formula
     build_args = []
     features = []
     features.push("lang-cjk") if build.with? "cjk"
-    features.push("video-ffmpeg") if build.with? "ffmpeg@6"
+    features.push("video-ffmpeg") if build.with? "ffmpeg"
     features.push("native-tls") if build.without? "rustls"
     build_args.push("--no-default-features") if build.without? "rustls"
     build_args.push("--features=#{features.join(",")}") unless features.empty?
@@ -35,7 +35,7 @@ class Gossip < Formula
     system "cargo", "install", *std_cargo_args(path: "gossip-bin"), *build_args
     cd "target/release" do
       bin.install "gossip"
-      if build.with? "ffmpeg@6"
+      if build.with? "ffmpeg"
         libexec.install Dir[shared_library("libSDL2*")]
         bin.install_symlink Dir["#{libexec}/*"]
       end
