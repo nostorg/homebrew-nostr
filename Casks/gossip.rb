@@ -1,9 +1,9 @@
 cask "gossip" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.11.1"
-  sha256 arm:   "0ac0c6151a994e0e29af437f0462d5dbd17e4a1a192b7e16985bf84283e300b7",
-         intel: "8f99675f2f2d5c420279e5fd10ae3fad6fb565af93cc11304fad770c7b13981a"
+  version "0.11.3"
+  sha256 arm:   "e66f504c203921705199100d052185be7f482ee1823e487892a1505da5210e8b",
+         intel: "cebdb5a740256100786feecc3dbe72743f7435119658cf22943c9f78c7202b99"
 
   url "https://github.com/mikedilger/gossip/releases/download/v#{version}/gossip-#{version}-Darwin-#{arch}.dmg"
   name "Gossip"
