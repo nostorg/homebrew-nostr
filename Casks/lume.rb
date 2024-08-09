@@ -1,9 +1,9 @@
 cask "lume" do
   arch arm: "aarch64", intel: "x64"
 
-  version "4.0.14"
-  sha256 arm:   "5996d352fd4b7244b45fee672c7f9b507afc8b36341af0d3a50823e3597a11a7",
-         intel: "0233d9589aa773c72ed5f40158e3044f8a03183d2ffb8286a92a7492d9e46a26"
+  version "4.0.15"
+  sha256 arm:   "534c98b7606dd4619f9a581a20395c37ed635ed85d475d8a1c23ceeb00c7a3a5",
+         intel: "f7feb4be93d4dd374095a6e98008f8b54640a395a9eec1c645c06630a7cc6d49"
 
   url "https://github.com/luminous-devs/lume/releases/download/v#{version}/Lume_#{version}_#{arch}.dmg",
       verified: "github.com/luminous-devs/lume/"
