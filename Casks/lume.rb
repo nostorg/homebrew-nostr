@@ -1,11 +1,8 @@
 cask "lume" do
-  arch arm: "aarch64", intel: "x64"
+  version "4.1.1"
+  sha256 "8b1bcacb5da6c6a93a4efc8775ea03c66dcba494db464affc5b8217930159fff"
 
-  version "4.0.15"
-  sha256 arm:   "534c98b7606dd4619f9a581a20395c37ed635ed85d475d8a1c23ceeb00c7a3a5",
-         intel: "f7feb4be93d4dd374095a6e98008f8b54640a395a9eec1c645c06630a7cc6d49"
-
-  url "https://github.com/luminous-devs/lume/releases/download/v#{version}/Lume_#{version}_#{arch}.dmg",
+  url "https://github.com/luminous-devs/lume/releases/download/v#{version}/Lume_#{version}_universal.dmg",
       verified: "github.com/luminous-devs/lume/"
   name "Lume"
   desc "Ambitious nostr client"
