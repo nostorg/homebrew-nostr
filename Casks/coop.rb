@@ -1,6 +1,6 @@
 cask "coop" do
-  version "0.1.7"
-  sha256 "de4f5b7e3105946d6304876c61daa3ae06629fcc57e496f705f53be11929c177"
+  version "0.2.0"
+  sha256 "0131ea0bd0b35bdb134387f10d13cf758fda7e95844618e316a289f1e0aad9e2"
 
   url "https://github.com/lumehq/coop/releases/download/v#{version}/Coop_#{version}_universal.dmg"
   name "Coop"
