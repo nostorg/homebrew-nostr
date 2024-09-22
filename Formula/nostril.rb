@@ -2,8 +2,8 @@ class Nostril < Formula
   desc "CLI util for generating nostr events"
   homepage "https://github.com/jb55/nostril"
   url "https://github.com/nostorg/nostril.git",
-      tag:      "v0.0.1",
-      revision: "8726ad3b15f10e5a09864bbef61f7a35d1d2f3d7"
+      tag:      "v0.0.2",
+      revision: "97744c480c9976f95ccd76bdb341fc3619c16eb6"
   license "MIT"
   head "https://github.com/jb55/nostril.git", branch: "master"
 
