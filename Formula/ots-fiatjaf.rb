@@ -2,8 +2,8 @@ class OtsFiatjaf < Formula
   desc "OpenTimestamps CLI"
   homepage "https://github.com/fiatjaf/ots"
   url "https://github.com/fiatjaf/ots.git",
-      tag:      "v0.2.3",
-      revision: "8b29c6252c0b669161958f9beffea2ca18667064"
+      tag:      "v0.3.0",
+      revision: "37714d7388d411ec3082079195e309cfbffbfc8e"
   head "https://github.com/fiatjaf/ots.git", branch: "master"
 
   depends_on "go" => :build
