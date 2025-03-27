@@ -1,9 +1,9 @@
 cask "gossip" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.13.0"
-  sha256 arm:          "e08c29f02d38064121bb76abd2cdfb6357f869254997dd864e7b092423636b87",
-         x86_64:       "3f9d3bd5e7e48cc83e437f53b9605a16b81c0df8b80d3124971c0290405add84",
+  version "0.14.0"
+  sha256 arm:          "0165f5c2aab3f77aca8c4ad09f687363225d27ed35952b84d5251e228fe4ab07",
+         x86_64:       "2cb115e49cbcdeed901d9b1cacaaadfd56be0c747a06f6db3e4b283495c56506",
          arm64_linux:  "0",
          x86_64_linux: "0"
 
