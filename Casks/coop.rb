@@ -1,8 +1,8 @@
 cask "coop" do
-  version "0.1.3"
-  sha256 "89aa981f7c7450f52a82b3ded721a5269f75fad8e28c9d5968415ff58df41f98"
+  version "0.1.4-alpha"
+  sha256 "aece5cb34a3566c38e73cc7ce683da5b308089228ae8e1e202fea8a01510fd03"
 
-  url "https://github.com/lumehq/coop/releases/download/#{version}-alpha/Coop_#{version}_aarch64.dmg"
+  url "https://github.com/lumehq/coop/releases/download/#{version}/Coop_#{version.match(/[\d.]+/)}_aarch64.dmg"
   name "Coop"
   desc "Direct message nostr client"
   homepage "https://github.com/lumehq/coop"
