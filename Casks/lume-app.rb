@@ -1,4 +1,4 @@
-cask "lume" do
+cask "lume-app" do
   version "24.11.8"
   sha256 "46a8328c9a4ed332653a73e5e54dfd590cccc97b75bbef33b1351ac36ab85b3d"
 

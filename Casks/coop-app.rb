@@ -1,4 +1,4 @@
-cask "coop" do
+cask "coop-app" do
   version "0.1.5-alpha"
   sha256 "be9ab79ff91062c7cbcba4bf9b97a1b4a381cdac3dadd08fefa1a882fac01f94"
 

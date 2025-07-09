@@ -1,4 +1,4 @@
-cask "gossip" do
+cask "gossip-app" do
   arch arm: "arm64", intel: "x86_64"
 
   version "0.14.0"
