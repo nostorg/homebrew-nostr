@@ -1,8 +1,13 @@
 cask "coop-app" do
-  version "0.2.2"
-  sha256 "11c213567174699a96cd41901c44c8c26b03862bf5d14207dee172bc48268e82"
+  arch arm: "aarch64", intel: "x64"
 
-  url "https://github.com/lumehq/coop/releases/download/v#{version}/Coop_#{version.match(/[\d.]+/)}_aarch64.dmg"
+  version "0.2.2"
+  sha256 arm:          "11c213567174699a96cd41901c44c8c26b03862bf5d14207dee172bc48268e82",
+         x86_64:       "58ef1bad98e59f6b4c0185e41c651d8f4707462df8577b40c11baccd3bf0e424",
+         arm64_linux:  "0",
+         x86_64_linux: "0"
+
+  url "https://github.com/lumehq/coop/releases/download/v#{version}/Coop_#{version.match(/[\d.]+/)}_#{arch}.dmg"
   name "Coop"
   desc "Direct message nostr client"
   homepage "https://github.com/lumehq/coop"
