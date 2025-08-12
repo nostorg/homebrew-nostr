@@ -1,8 +1,8 @@
 cask "coop-app" do
-  version "0.1.5-alpha"
-  sha256 "be9ab79ff91062c7cbcba4bf9b97a1b4a381cdac3dadd08fefa1a882fac01f94"
+  version "0.2.2"
+  sha256 "11c213567174699a96cd41901c44c8c26b03862bf5d14207dee172bc48268e82"
 
-  url "https://github.com/lumehq/coop/releases/download/#{version}/Coop_#{version.match(/[\d.]+/)}_aarch64.dmg"
+  url "https://github.com/lumehq/coop/releases/download/v#{version}/Coop_#{version.match(/[\d.]+/)}_aarch64.dmg"
   name "Coop"
   desc "Direct message nostr client"
   homepage "https://github.com/lumehq/coop"
@@ -10,7 +10,7 @@ cask "coop-app" do
   livecheck do
     url :url
     strategy :github_latest
-    regex(/^v?(\d+(?:\.\d+)+(?:-\w+))$/i)
+    regex(/^v?(\d+(?:\.\d+)+(?:-\w+)?)$/i)
   end
 
   depends_on arch: :arm64
