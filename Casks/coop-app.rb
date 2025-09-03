@@ -1,9 +1,9 @@
 cask "coop-app" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.2"
-  sha256 arm:          "11c213567174699a96cd41901c44c8c26b03862bf5d14207dee172bc48268e82",
-         x86_64:       "58ef1bad98e59f6b4c0185e41c651d8f4707462df8577b40c11baccd3bf0e424",
+  version "0.2.5"
+  sha256 arm:          "577883ca3bbdcb1bca6e6e19c51f071db530393a5b643a2b3da304a331a8d4e5",
+         x86_64:       "1c6603deb374a71fe0caa71b7002b910a48c17bf069f08d3df55ffa1765976ac",
          arm64_linux:  "0",
          x86_64_linux: "0"
 
