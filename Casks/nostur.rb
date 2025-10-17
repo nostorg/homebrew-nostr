@@ -1,6 +1,6 @@
 cask "nostur" do
-  version "1.23.0"
-  sha256 "0a82776d688f84aaf813f5b773d918af55f0b5720f20f638df378ac4eb738d44"
+  version "1.24.4"
+  sha256 "c3a49b66723ddcbdf232f928d948b592a76e233db72d9ab9694f8a5df8ca1572"
 
   url "https://nostur.com/Nostur-#{version}.dmg"
   name "Nostur"
@@ -12,6 +12,8 @@ cask "nostur" do
     strategy :page_match
     regex(%r{href=.*?/Nostur[._-](\d+(?:\.\d+)*)\.dmg}i)
   end
+
+  depends_on macos: ">= :monterey"
 
   app "Nostur.app"
 
