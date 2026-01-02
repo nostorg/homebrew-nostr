@@ -1,16 +1,16 @@
 cask "nostur" do
-  version "1.24.4"
-  sha256 "c3a49b66723ddcbdf232f928d948b592a76e233db72d9ab9694f8a5df8ca1572"
+  version "1.25.0"
+  sha256 "4648453ccb55ee247331c9453e68a001d96cd8175bba6a8dd6b337e35cb92714"
 
-  url "https://nostur.com/Nostur-#{version}.dmg"
+  url "https://github.com/nostur-com/nostur-ios-public/releases/download/#{version}/Nostur-#{version}.dmg",
+      verified: "github.com/nostur-com/"
   name "Nostur"
   desc "Nostr client"
   homepage "https://nostur.com/"
 
   livecheck do
-    url :homepage
-    strategy :page_match
-    regex(%r{href=.*?/Nostur[._-](\d+(?:\.\d+)*)\.dmg}i)
+    url :url
+    strategy :github_latest
   end
 
   depends_on macos: ">= :monterey"
