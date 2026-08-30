@@ -13,7 +13,7 @@ cask "nostur" do
     regex(%r{href=.*?/Nostur[._-](\d+(?:\.\d+)*)\.dmg}i)
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Nostur.app"
 

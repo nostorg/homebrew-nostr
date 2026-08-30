@@ -16,7 +16,7 @@ cask "notedeck" do
     skip "Check manually at https://damus.io/notedeck/install/"
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Notedeck.app"
 
