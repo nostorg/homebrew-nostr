@@ -12,6 +12,8 @@ cask "lume-app" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Lume.app"
 
   zap trash: [

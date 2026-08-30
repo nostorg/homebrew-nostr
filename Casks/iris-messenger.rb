@@ -14,6 +14,8 @@ cask "iris-messenger" do
     regex(/^app[._-]v?(\d+(?:\.\d+)+)$/i)
   end
 
+  depends_on :macos
+
   # Rename to avoid conflict with homebrew/cask/iris
   app "iris.app", target: "Iris Messenger.app"
 

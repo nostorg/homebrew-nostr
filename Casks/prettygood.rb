@@ -12,6 +12,8 @@ cask "prettygood" do
     strategy :git
   end
 
+  depends_on :macos
+
   app "PrettyGood.app"
 
   zap trash: [

@@ -24,6 +24,8 @@ cask "nostrid" do
     end
   end
 
+  depends_on :macos
+
   pkg "Nostrid-MacOS-x64-v#{version}.pkg"
 
   uninstall pkgutil: "com.nostrid.nostrid"
