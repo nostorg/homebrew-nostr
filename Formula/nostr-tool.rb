@@ -14,6 +14,6 @@ class NostrTool < Formula
   end
 
   test do
-    false
+    system "#{bin}/nostr-tool", "-h"
   end
 end
