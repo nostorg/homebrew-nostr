@@ -12,4 +12,8 @@ class Nostcat < Formula
   def install
     system "cargo", "install", *std_cargo_args
   end
+
+  test do
+    false
+  end
 end

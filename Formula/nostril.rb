@@ -17,4 +17,8 @@ class Nostril < Formula
     bin.install "nostril-query"
     man1.install "doc/nostril.1"
   end
+
+  test do
+    false
+  end
 end
