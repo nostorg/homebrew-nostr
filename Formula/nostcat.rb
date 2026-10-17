@@ -14,6 +14,6 @@ class Nostcat < Formula
   end
 
   test do
-    false
+    system "#{bin}/nostcat", "-h"
   end
 end
