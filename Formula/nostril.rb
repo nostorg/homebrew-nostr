@@ -19,6 +19,6 @@ class Nostril < Formula
   end
 
   test do
-    false
+    assert_match "usage: nostril", shell_output("#{bin}/nostril --help", 1)
   end
 end
