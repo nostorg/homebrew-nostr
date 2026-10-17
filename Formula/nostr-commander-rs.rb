@@ -14,6 +14,6 @@ class NostrCommanderRs < Formula
   end
 
   test do
-    false
+    system "#{bin}/nostr-commander-rs", "-h"
   end
 end
